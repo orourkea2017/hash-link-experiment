@@ -1,7 +1,17 @@
 .app {
   background-color: #fafafa;
+  padding: 1rem;
 }
 
 .nav {
-  background-color: #dfdfdf;
+  padding: 1rem;
+  background-color: #efefef;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #c70003;
 }

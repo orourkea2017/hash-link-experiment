@@ -21,7 +21,7 @@ function hashLinkScroll() {
   }
 }
 
-const Container = (props) => <div>
+const Container = (props) => <div className='app'>
   <Nav />
   {props.children}
 </div>
