@@ -10,7 +10,7 @@ import Shapes from './shapes';
 import Colours from './colours';
 import './App.css';
 
-const Container = (props) => <div>
+const Container = (props) => <div className='app'>
   <Nav />
   {props.children}
 </div>
