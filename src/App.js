@@ -10,6 +10,12 @@ import Shapes from './shapes';
 import Colours from './colours';
 import './App.css';
 
+import { anchorate } from 'anchorate';
+
+function onUpdate () {
+  anchorate();
+}
+
 const Container = (props) => <div>
   <Nav />
   {props.children}
@@ -57,7 +63,7 @@ const Home = () => (
 class App extends React.Component {
   render() {
     return (
-      <Router history={browserHistory}>
+      <Router onUpdate={onUpdate} history={browserHistory}>
         <Route path='/' component={Container}>
           <IndexRoute component={Home}/>
           <Route path="/shapes" component={Shapes}/>
