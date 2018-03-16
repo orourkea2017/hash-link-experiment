@@ -10,6 +10,17 @@ import Shapes from './shapes';
 import Colours from './colours';
 import './App.css';
 
+function hashLinkScroll() {
+  const { hash } = window.location;
+  if (hash !== '') {
+    setTimeout(() => {
+      const id = hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) element.scrollIntoView();
+    }, 0);
+  }
+}
+
 const Container = (props) => <div>
   <Nav />
   {props.children}
@@ -57,7 +68,7 @@ const Home = () => (
 class App extends React.Component {
   render() {
     return (
-      <Router history={browserHistory}>
+      <Router onUpdate={hashLinkScroll} history={browserHistory}>
         <Route path='/' component={Container}>
           <IndexRoute component={Home}/>
           <Route path="/shapes" component={Shapes}/>
