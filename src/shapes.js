@@ -6,7 +6,7 @@ const Shapes = () => (
     <div id='heading'>
       <h2>Shapes</h2>
       <p>You can go to all these divs by hash linking to the name of a shape e.g <Link to="/shapes#octagon"><code>#octagon</code></Link>.</p>
-      <p><code>#text</code> will take you to the text at the bottom that makes this scroll.</p>
+      <p><Link to="/shapes#text"><code>#text</code></Link> will take you to the text at the bottom that makes this scroll.</p>
     </div>
     <div id='body'>
       <div id='square'>
