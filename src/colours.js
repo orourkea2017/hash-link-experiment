@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Colours = ({ match }) => (
   <div>
@@ -7,8 +8,8 @@ const Colours = ({ match }) => (
     </div>
     <div id='about'>
       <h3>Let's talk about colours.</h3>
-      <p>This is the <code>#about</code> div.</p>
-      <p>If you go to <code>#lots</code>, you'll be taken to the last paragraph in this div.</p>
+      <p>This is the <Link to="/colours#about"><code>#about</code></Link> div.</p>
+      <p>If you go to <Link to="/colours#lots"><code>#lots</code></Link>, you'll be taken to the last paragraph in this div.</p>
       <p>Colours.</p>
       <p>Colours.</p>
       <p>Colours.</p>
