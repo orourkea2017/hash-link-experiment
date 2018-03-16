@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Shapes = () => (
   <div>
     <div id='heading'>
       <h2>Shapes</h2>
-      <p>You can go to all these divs by hash linking to the name of a shape e.g <code>#octagon</code>.</p>
+      <p>You can go to all these divs by hash linking to the name of a shape e.g <Link to="/shapes#octogon"><code>#octagon</code></Link>.</p>
       <p><code>#text</code> will take you to the text at the bottom that makes this scroll.</p>
     </div>
     <div id='body'>
